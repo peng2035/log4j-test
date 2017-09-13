@@ -18,7 +18,6 @@ target/
 *.iws
 
 # temp ignore
-*.log
 *.cache
 *.diff
 *.patch
