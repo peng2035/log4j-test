@@ -29,7 +29,7 @@ public class App {
         PropertyConfigurator.configure(ClassLoader.getSystemResource("log4j.properties"));
 
         App app = new App();
-        ExecutorService pool = Executors.newFixedThreadPool(10000);
+        ExecutorService pool = Executors.newFixedThreadPool(100);
 
         long startTime = System.currentTimeMillis() + 1000 * 600;
         while(System.currentTimeMillis() < startTime) {
