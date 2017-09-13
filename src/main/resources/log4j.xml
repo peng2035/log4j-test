@@ -10,7 +10,7 @@
 
     <appender name="asyncAppender" class="org.apache.log4j.AsyncAppender">
         <param name="BufferSize" value="4096" />
-        <param name="Blocking" value="false"/>
+        <!--<param name="Blocking" value="false"/>-->
         <appender-ref ref="appAppender" />
     </appender>
 
