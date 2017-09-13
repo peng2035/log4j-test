@@ -26,7 +26,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         String str = txt2String(new File("src/main/resources/BIPlatform.log"));
-        PropertyConfigurator.configure(ClassLoader.getSystemResource("log4j.properties"));
+        PropertyConfigurator.configure(ClassLoader.getSystemResource("log4j.xml"));
 
         App app = new App();
         ExecutorService pool = Executors.newFixedThreadPool(100);
